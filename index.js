@@ -16,6 +16,10 @@ app.get('/*',(req,res) => {
     return
 })
 
+app.get('/.well-known/pki-validation/', (req, res) => {
+    res.sendFile(__dirname+"/view/24F875E4E29F1AC38153639A75A748C8.txt")
+    return
+})
 
 
 
